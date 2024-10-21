@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Garden - Northstar Homes</title>
+    <style>
+        /* Copy the relevant styles from index.html */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        nav a.active {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .contact-btn {
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #ff8533;
+        }
+        .project-detail {
+            padding: 50px 0;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #ff6600;
+        }
+        .highlight {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .highlight-item {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .services-btn {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .services-btn:hover {
+            background-color: #ff8533;
+        }
+
+        .projects-btn {
+            background-color: transparent;
+            color: #ff6600;
+            border: 2px solid #ff6600;
+        }
+
+        .projects-btn:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="nlogo.png" alt="Northstar Logo" width="150" height="50">
+            </div>
+            <nav>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about-us">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#location">Location</a>
+                <a href="index.html#contact-us" class="contact-btn">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="project-detail">
+                <h1>WELCOME TO EDEN GARDEN, VIZAG</h1>
+                <div class="highlight">DREAM. DISCOVER. DWELL.</div>
+                <p class="description">A magical realm which defines luxury</p>
+                
+                <h2>Epitome of elegance and luxury living</h2>
+                <p class="description">
+                    Imagine a setting which transports you to a magical reality where you are nothing but extraordinary. The exclusive address, by invitation clubs, grand homes and world-class amenities will immediately make you part of the swish set in town. Eden Garden at Vizag offers you a grand life in the harbour city of Andhra. We at Northstar understand that home is the place you identify with your loved ones and yourself. Wake up every day to a panoramic view of the city and blissfully immerse yourself in the light and sounds of your home, which is designed to let nature in.
+                </p>
+                
+                <h2>HIGHLIGHTS OF THE PROJECTS</h2>
+                <p class="description">
+                    Comparing the highlights is a smart way to find out which project stands out among the many apartments for sale in Visakhapatnam. Listed below are some of the key highlights of Northstar Homes' EDEN GARDEN.
+                </p>
+                
+                <div class="highlights">
+                    <div class="highlight-item">Iconic T-shape - Lets in sunlight and sea breeze in all rooms</div>
+                    <div class="highlight-item">Private corridor for each flat</div>
+                    <div class="highlight-item">Lavish balconies</div>
+                    <div class="highlight-item">Contemporary elevation</div>
+                    <div class="highlight-item">Grand 14,000 sq ft Clubhouse</div>
+                    <div class="highlight-item">Just 2.5 KM from Tenneti Park Beach</div>
+                    <div class="highlight-item">Nestled in pure serenity between kailasagiri and Simhachalam Hills</div>
+                </div>
+            </section>
+            <section class="cta-buttons">
+                <a href="index.html#services" class="cta-btn services-btn">Our Services</a>
+                <a href="index.html#projects" class="cta-btn projects-btn">View Projects →</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

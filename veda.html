@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veda - Northstar Homes</title>
+    <style>
+        /* Copy the relevant styles from index.html and leela.html */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        nav a.active {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .contact-btn {
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #ff8533;
+        }
+        .project-detail {
+            padding: 50px 0;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #ff6600;
+        }
+        .highlight {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .highlight-item {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .full-width-image {
+            width: 100%;
+            height: calc(100vh - 90px); /* Adjust 90px based on your header height */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .image-overlay h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .image-overlay p {
+            font-size: 24px;
+            max-width: 800px;
+        }
+        
+        /* Add these styles for section visibility */
+      
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="nlogo.png" alt="Northstar Logo" width="150" height="50">
+            </div>
+            <nav>
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about-us" class="nav-link">About Us</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#location" class="nav-link">Location</a>
+                <a href="index.html#contact-us" class="nav-link contact-btn">Contact Us</a>
+                <button class="hamburger-menu" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="active">
+                <section class="full-width-image" style="background-image: url('veda.jpg');">
+                    <div class="image-overlay">
+                        <h1>Welcome to Veda</h1>
+                        <p>3 BHK Luxury Flats in Himayatnagar</p>
+                    </div>
+                </section>
+                <section class="project-detail">
+                    <h2>WELCOME TO VEDA</h2>
+                    <div class="highlight">DREAM. DISCOVER. DWELL.</div>
+                    
+                    <p class="description">
+                        Signature apartments, a synthesis of modern living and natural surroundings Centrally located at Himayatnagar, Hyderabad, these exquisitely designed suites boast of modern indoor and outdoor amenities. Ensconced within the lush green environments and tasteful landscaping, the luxury project has only 4 flats per floor. This gives you the privacy and serenity of an independent villa. The apartments are designed to optimize space and light. Veda is your private cocoon, where you can celebrate the sense of space and light to energize life.
+                    </p>
+                    
+                    <h2>HIGHLIGHTS OF THE PROJECTS</h2>
+                    <p class="description">
+                        Veda is designed to provide you with the best in class living spaces.
+                    </p>
+                    
+                    <div class="highlights">
+                        <div class="highlight-item">Luxury flats with hi-end specifications</div>
+                        <div class="highlight-item">4 flats per floor with 5 floors total of 20 flats</div>
+                        <div class="highlight-item">Cellar & stilt car parking</div>
+                        <div class="highlight-item">Home automation</div>
+                        <div class="highlight-item">Bay windows in bedrooms</div>
+                        <div class="highlight-item">Automatic V3F elevator</div>
+                        <div class="highlight-item">Exclusive visitors and valet parking</div>
+                    </div>
+                </section>
+            </section>
+           
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main > section');
+
+            // Set the initial active section
+            const initialActiveSection = document.querySelector('section.active') || sections[0];
+            initialActiveSection.classList.add('active');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+
+                    document.getElementById(targetId).classList.add('active');
+
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Set the initial active nav link
+            const initialActiveLink = document.querySelector(`.nav-link[href="#${initialActiveSection.id}"]`);
+            if (initialActiveLink) {
+                initialActiveLink.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

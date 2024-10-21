@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leela - Northstar Homes</title>
+    <style>
+       body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        nav a.active {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .contact-btn {
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #ff8533;
+        }
+        .project-detail {
+            padding: 50px 0;
+            text-align: left;
+        }
+        h1, h2 {
+            color: #ff6600;
+        }
+        .highlight {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .highlight-item {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .full-width-image {
+            width: 100%;
+            height: calc(100vh - 90px); /* Adjust 90px based on your header height */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .image-overlay h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .image-overlay p {
+            font-size: 24px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="nlogo.png" alt="Northstar Logo" width="150" height="50">
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#about-us" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact-us" class="nav-link contact-btn">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="active">
+                <section class="full-width-image" style="background-image: url('leela big image.jpg');">
+                    <div class="image-overlay">
+                        <h1>Welcome to Leela</h1>
+                        <p>3 & 4 BHK Luxury Apartments in Padmarao Nagar, Secunderabad</p>
+                    </div>
+                </section>
+                <section class="project-detail">
+                    <h1>3 & 4 BHK LUXURY APARTMENTS IN PADMARAO NAGAR, SECUNDERABAD</h1>
+                    <p>TS RERA Approved Project Reg. No: P02500001215</p>
+                    <p>ONGOING : HYDERABAD</p>
+                    
+                    <h2>WELCOME TO LEELA PADMARAO NAGAR, SECUNDERABAD</h2>
+                    <div class="highlight">DREAM. DISCOVER. DWELL.</div>
+                    
+                    <p class="description">
+                        Uniquely designed to mesmerise and inspire, Northstar LEELA is a project of 30 Premium 3 & 4 BHK Apartments in Padmarao Nagar, Secunderabad.
+                    </p>
+                    
+                    <div class="project-info">
+                        <h3>Project Highlights:</h3>
+                        <p>• 3BHK & 4BHK Luxury Flats, SPREAD OVER 2850 sq.yds</p>
+                        <p>• 1958 TO 2917 SQ FT OF BUILT-UP AREA</p>
+                        <p>• EAST & WEST FACING FLATS</p>
+                    </div>
+                    
+                    <p class="description">
+                        With numerous innovative elements, Northstar Leela offers exclusive homes with limitless excellence to immerse yourself in a lifestyle like no other in Hyderabad. From parking to terrace utility space, every bit of space is creatively crafted for you to dwell in the premium lifestyle of Northstar Leela. With 1958 to 2917 sq ft of built-up area, the luxury of space can be easily crossed off your list. Spread over 2850 square yards, Northstar Leela is strategically located close to all conveniences to become a brand new landmark in Padmarao Nagar.
+                    </p>
+                    
+                    <div class="project-info">
+                        <h3>PROJECT HOME LOANS APPROVED BY</h3>
+                        <img src="hdfc logo.jpeg" alt="HDFC Bank" style="max-width: 100px; margin-right: 20px;">
+                        <img src="canara logo.jpeg" alt="Canara Bank" style="max-width: 100px;">
+                    </div>
+                </section>
+            </section>
+            
+        </main>
+    </div>
+
+   
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                document.getElementById(targetId).classList.add('active');
+
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    });
+</script>
+</html>
